@@ -1,1 +1,93 @@
 /* CSS stillerinizi buraya girin */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(101, 95, 95);
+    color: beige;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 750px;
+    margin: auto auto;
+}
+
+header nav a {
+    background-color: rgb(69, 68, 68);
+    padding: 5px 20px;
+    color: beige;
+    border-radius: 10px;
+    cursor:pointer;
+    border-color: goldenrod;
+}
+
+main {
+    background-image: url("https://picsum.photos/700/500");
+    width: 700px;
+    margin: auto auto;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main div {
+    text-align: center;
+}
+
+main button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor:pointer;
+    background-color: goldenrod;
+    border-color: rgb(69, 68, 68);
+    color:beige;
+}
+
+button:hover{
+    background-color: white;
+    color:#E79947;
+    cursor:pointer;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    margin: 5% 20px;
+    width: 750px;
+    margin-left: 20%;
+}
+
+section div {
+    width: 30%;
+    text-align: center;
+}
+
+section h3{
+    margin-bottom: 30px; 
+}
+
+section img{
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    margin-left: 43%;
+}
+
+footer button {
+    width: 100px;
+    height: 50px;
+    border-radius:10px;
+    margin-bottom: 50px;
+    text-decoration: none;
+    cursor:pointer;
+    background-color: goldenrod;
+    border-color: goldenrod;
+    color:beige;
+}
