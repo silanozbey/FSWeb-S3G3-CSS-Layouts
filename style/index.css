@@ -1,36 +1,39 @@
 /* CSS stillerinizi buraya girin */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(101, 95, 95);
-    color: beige;
+    background-color: #111111;
+    color: #bf9653bf;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 750px;
+    width: 70vw;
     margin: auto auto;
 }
 
 header nav a {
-    background-color: rgb(69, 68, 68);
-    padding: 5px 20px;
-    color: beige;
-    border-radius: 10px;
+
+    padding: 0.5vw 1vw;
+    color: #bf9653bf;
     cursor: pointer;
-    border-color: goldenrod;
+    /*border-radius: 1vw;
+    background-color: #111111;
+    border: 2px solid #BF9553;*/
 }
 
 main {
-    background-image: url("https://picsum.photos/700/500");
-    width: 700px;
+    background-image: url("https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?cs=srgb&dl=pexels-pixabay-270360.jpg&fm=jpg&_gl=1*1d95u1d*_ga*MTU0NzIzNjg3MS4xNjY4MDk3ODkx*_ga_8JE65Q40S6*MTY2ODA5Nzg5OS4xLjEuMTY2ODA5NzkzNy4wLjAuMA..");
+    background-size: cover;
+    width: 60vw;
     margin: auto auto;
-    height: 500px;
+    height: 35vw;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-size: 14px;
 }
 
 main div {
@@ -38,17 +41,21 @@ main div {
 }
 
 main button {
-    padding: 10px 20px;
-    border-radius: 20px;
+    padding: 1vw 2vw;
     cursor: pointer;
-    background-color: goldenrod;
-    border-color: rgb(69, 68, 68);
-    color: beige;
+    border-radius: 1vw;
+    background-color: #111111;
+    border-style: outset;
+    border-color: #bf9653bf;
+    color: #FFE9C6;
+
 }
 
 button:hover {
-    background-color: white;
-    color: #E79947;
+    background-color: #BF9553;
+    color: #FFE9C6;
+    border-style: inset;
+    border-color: #bf9653bf;
     cursor: pointer;
 }
 
@@ -57,9 +64,8 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: center;
-    margin: 5% 20px;
-    width: 750px;
-    margin-left: 20%;
+    margin: 5% auto;
+    width: 60%;
 }
 
 section div {
@@ -77,16 +83,58 @@ section img {
 
 footer {
     text-align: center;
-    margin-left: 43%;
+    margin: auto auto;
+    padding: 1vw 2vw;
 }
 
 footer button {
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-    margin-bottom: 50px;
+    border-radius: 1vw;
+    margin-bottom: 5vw;
     text-decoration: none;
     cursor: pointer;
-    background-color: goldenrod;
-    color: beige;
+    background-color: #111111;
+    border-color: #bf9653bf;
+    border-style: outset;
+    color: #BF9553;
+    padding: 1vw 2vw;
 }
+
+footer nav .socialMedia i{
+    color:white;
+    font-size: 2rem;
+    margin: 20px 30px;
+    text-align:center;
+    cursor: pointer;
+}
+
+@media(max-width: 768px) {
+    header {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+    }
+
+    header nav a {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 30px;
+    }
+
+    main {
+        width: 90vw;
+        height: 56vw;
+    }
+
+    section {
+        width: 90vw;
+    }
+
+    section div {
+        width: 45%;
+    }
+
+}
+
+@media(max-width: px) {}
